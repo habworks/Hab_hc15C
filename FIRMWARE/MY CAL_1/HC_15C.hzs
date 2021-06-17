@@ -1,0 +1,81 @@
+<!DOCTYPE CrossStudio_for_ARM_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints>
+  <BreakpointListItem line="0" action="Stop" hardwareBreakpoint="Any" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="4" counter="0" isFunctionBreakpoint="false" filename="" expression="(FIO0PIN2 &amp; 0x08) == 0x08" />
+  <BreakpointListItem line="0" action="Stop" hardwareBreakpoint="Any" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="3" counter="0" isFunctionBreakpoint="false" filename="" expression="BytesRead == 8" />
+  <BreakpointListItem line="330" action="" hardwareBreakpoint="" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="2" counter="0" isFunctionBreakpoint="false" filename="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\START_N_SLEEP_TASKS.c" expression="" />
+  <BreakpointListItem line="363" action="" hardwareBreakpoint="" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="2" counter="0" isFunctionBreakpoint="false" filename="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\START_N_SLEEP_TASKS.c" expression="" />
+ </Breakpoints>
+ <ETMWindow>
+  <ETMRegister number="0" value="800" />
+  <ETMRegister number="8" value="6f" />
+  <ETMRegister number="9" value="1000000" />
+ </ETMWindow>
+ <ExecutionCountWindow/>
+ <Memory1>
+  <MemoryWindow autoEvaluate="0" addressText="0x74736554" numColumns="8" sizeText="4" dataSize="1" radix="16" addressSpace="" />
+ </Memory1>
+ <Memory2>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" addressSpace="" />
+ </Memory2>
+ <Memory3>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" addressSpace="" />
+ </Memory3>
+ <Memory4>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" addressSpace="" />
+ </Memory4>
+ <Project>
+  <ProjectSessionItem path="HC_15C" name="unnamed" />
+ </Project>
+ <Register1>
+  <RegisterWindow openNodes="SC;SC/PCON;SCB;SCB/SCB_SCR;WDT/WDMOD" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="SC;TIMER2;PCB;GPIO;RTC;WDT;SCB" decimalNodes="" octalNodes="" asciiNodes="" />
+ </Register1>
+ <Register2>
+  <RegisterWindow openNodes="NVIC" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="NVIC" decimalNodes="" octalNodes="" asciiNodes="" />
+ </Register2>
+ <Register3>
+  <RegisterWindow openNodes="" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="" decimalNodes="" octalNodes="" asciiNodes="" />
+ </Register3>
+ <Register4>
+  <RegisterWindow openNodes="" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="" decimalNodes="" octalNodes="" asciiNodes="" />
+ </Register4>
+ <TargetWindow programAction="" uploadFileType="" programLoadAddress="" programSize="" uploadFileName="" uploadMemoryInterface="" programFileName="" uploadStartAddress="" programFileType="" uploadSize="" programMemoryInterface="" />
+ <TraceWindow>
+  <Trace enabled="Yes" />
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never" >
+   <Watchpoint linenumber="68" radix="-1" name="CalEvents" expression="CalEvents" filename="c:/users/hab/documents/hab projects/my_cal/firmware/my cal_1/touch_tasks.c" />
+   <Watchpoint linenumber="0" radix="-1" name="CalSettings" expression="CalSettings" filename="" />
+   <Watchpoint linenumber="0" radix="-1" name="Music_List" expression="Music_List" filename="" />
+   <Watchpoint linenumber="0" radix="-1" name="BackLightTimer" expression="BackLightTimer" filename="" />
+  </Watches>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never" />
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never" />
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never" />
+ </Watch4>
+ <Files>
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\main_ctl.c" y="165" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\main_ctl.c" left="0" selected="0" name="unnamed" top="157" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\CORE_FUNCTIONS.c" y="628" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\CORE_FUNCTIONS.c" left="0" selected="0" name="unnamed" top="122" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="6" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\CORE_FUNCTIONS.h" y="198" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\CORE_FUNCTIONS.h" left="0" selected="1" name="unnamed" top="173" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\HC15C_DEFINES.h" y="7" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\HC15C_DEFINES.h" left="0" selected="0" name="unnamed" top="105" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\TOUCH_TASKS.c" y="190" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\TOUCH_TASKS.c" left="0" selected="0" name="unnamed" top="177" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\POWER_TASKS.c" y="185" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\POWER_TASKS.c" left="0" selected="0" name="unnamed" top="171" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\START_N_SLEEP_TASKS.c" y="198" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\START_N_SLEEP_TASKS.c" left="0" selected="0" name="unnamed" top="219" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\CLOCK_TASKS.c" y="39" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\CLOCK_TASKS.c" left="0" selected="0" name="unnamed" top="15" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\LIST_TASKS.c" y="37" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\LIST_TASKS.c" left="0" selected="0" name="unnamed" top="25" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\LIST_TASKS.H" y="83" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\LIST_TASKS.H" left="0" selected="0" name="unnamed" top="71" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\AUDIO_TASKS.c" y="20" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\AUDIO_TASKS.c" left="0" selected="0" name="unnamed" top="170" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\POWER_TASKS.H" y="30" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\POWER_TASKS.H" left="0" selected="0" name="unnamed" top="18" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\DRIVER_SRC\TIMERS_HC15C.c" y="66" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\DRIVER_SRC\TIMERS_HC15C.c" left="0" selected="0" name="unnamed" top="47" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\DRIVER_SRC\STMPE24M31_HC15C.c" y="429" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1\DRIVER_SRC\STMPE24M31_HC15C.c" left="0" selected="0" name="unnamed" top="411" />
+ </Files>
+ <ARMCrossStudioWindow activeProject="HC_15C" autoConnectTarget="USB CrossConnect for ARM" debugSearchFileMap="" fileDialogInitialDirectory="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\MY CAL_1" fileDialogDefaultFilter="*.c" autoConnectCapabilities="388991" debugSearchPath="" buildConfiguration="THUMB Flash Debug" />
+</session>

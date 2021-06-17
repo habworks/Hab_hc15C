@@ -1,0 +1,147 @@
+<!DOCTYPE CrossStudio_Project_File>
+<solution Name="TEST HARDWARE" target="8" version="2">
+  <configuration Name="THUMB RAM Debug" inherited_configurations="THUMB;RAM;Debug"/>
+  <configuration Name="THUMB" Platform="ARM" arm_instruction_set="THUMB" arm_library_instruction_set="THUMB" c_preprocessor_definitions="__THUMB" hidden="Yes"/>
+  <configuration Name="RAM" c_preprocessor_definitions="__RAM_BUILD" hidden="Yes"/>
+  <configuration Name="Debug" build_debug_information="Yes" c_preprocessor_definitions="DEBUG" gcc_optimization_level="None" hidden="Yes" link_include_startup_code="No"/>
+  <configuration Name="THUMB RAM Release" inherited_configurations="THUMB;RAM;Release"/>
+  <configuration Name="Release" build_debug_information="No" c_additional_options="-g1" c_preprocessor_definitions="NDEBUG" gcc_optimization_level="Level 1" hidden="Yes" link_include_startup_code="No"/>
+  <configuration Name="THUMB Flash Debug" arm_linker_fiq_stack_size="512" arm_linker_irq_stack_size="512" arm_linker_stack_size="2048" inherited_configurations="THUMB;Flash;Debug"/>
+  <configuration Name="Flash" c_preprocessor_definitions="__FLASH_BUILD" hidden="Yes"/>
+  <configuration Name="THUMB Flash Release" inherited_configurations="THUMB;Flash;Release"/>
+  <project Name="TEST_HARDWARE_1">
+    <configuration Name="Common" Target="LPC1768" arm_architecture="v7M" arm_core_type="Cortex-M3" arm_linker_heap_size="128" arm_linker_process_stack_size="0" arm_linker_stack_size="128" arm_simulator_memory_simulation_filename="$(TargetsDir)/LPC1000/LPC1000SimulatorMemory.dll" arm_simulator_memory_simulation_parameter="LPC17;0x80000;0x8000;0x8000" arm_target_debug_interface_type="ADIv5" arm_target_loader_parameter="12000000" c_only_additional_options="-fms-extensions" c_preprocessor_definitions="USE_PROCESS_STACK" c_user_include_directories="$(TargetsDir)/LPC1000/include" link_include_startup_code="No" linker_additional_files="$(TargetsDir)/LPC1000/lib/liblpc1000$(LibExt)$(LIB);$(TargetsDir)/LPC1000/lib/cmsis$(LibExt)$(LIB)" linker_memory_map_file="$(TargetsDir)/LPC1000/LPC1768_MemoryMap.xml" oscillator_frequency="12MHz" project_directory="" project_type="Executable" property_groups_file_path="$(TargetsDir)/LPC1000/propertyGroups.xml"/>
+    <configuration Name="Flash" Placement="Flash" arm_target_flash_loader_file_path="$(TargetsDir)/LPC1000/Release/Loader_rpc.elf" arm_target_flash_loader_type="LIBMEM RPC Loader" linker_patch_build_command="&quot;$(StudioDir)/bin/crossscript&quot; &quot;load(\&quot;$(TargetsDir)/LPC1000/LPC1000_LinkPatch.js\&quot;);patch(\&quot;$(TargetPath)\&quot;);&quot;" linker_section_placement_file="$(StudioDir)/targets/Cortex_M/flash_placement.xml" target_reset_script="FLASHReset()"/>
+    <configuration Name="RAM" Placement="RAM" linker_section_placement_file="$(StudioDir)/targets/Cortex_M/ram_placement.xml" target_reset_script="SRAMReset()"/>
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc"/>
+      <file file_name="LED_HP15C.c"/>
+      <file file_name="TIMER_HP15C.c"/>
+      <file file_name="DIP204.c"/>
+      <file file_name="main.c"/>
+      <file file_name="PWM_HC15C.c"/>
+      <file file_name="ADC_HC15C.c"/>
+      <file file_name="CAT24C02.c"/>
+      <file file_name="CP2101_HC15C.c"/>
+      <file file_name="STMPE24M31_HC15C.c"/>
+      <file file_name="VCOM/NEEDED_USB_TYPES.h"/>
+    </folder>
+    <folder Name="System Files">
+      <file file_name="$(StudioDir)/source/thumb_crt0.s"/>
+      <file file_name="$(TargetsDir)/LPC1000/LPC1700_Startup.s"/>
+      <file file_name="$(TargetsDir)/LPC1000/LPC1700_Target.js">
+        <configuration Name="Common" file_type="Reset Script"/>
+      </file>
+      <file file_name="$(TargetsDir)/LPC1000/ctl_lpc1700.c"/>
+    </folder>
+    <folder Name="CMSIS Files" file_name="">
+      <file file_name="$(TargetsDir)/LPC1000/include/CMSIS/system_LPC17xx.c"/>
+      <file file_name="$(TargetsDir)/LPC1000/include/CMSIS/system_LPC17xx.h"/>
+      <file file_name="$(TargetsDir)/LPC1000/include/CMSIS/LPC17xx.h"/>
+      <file file_name="CMSIS/lpc17xx_clkpwr.c"/>
+      <file file_name="CMSIS/lpc17xx_gpio.c"/>
+      <file file_name="CMSIS/lpc17xx_i2c.c"/>
+      <file file_name="CMSIS/lpc17xx_pinsel.c"/>
+      <file file_name="CMSIS/lpc17xx_pwm.c"/>
+      <file file_name="CMSIS/lpc17xx_ssp.c"/>
+      <file file_name="CMSIS/lpc17xx_timer.c"/>
+      <file file_name="CMSIS/lpc17xx_uart.c"/>
+      <file file_name="CMSIS/lpc17xx_exti.c"/>
+      <file file_name="CMSIS/lpc17xx_systick.c"/>
+      <file file_name="CMSIS/lpc17xx_adc.c"/>
+    </folder>
+    <configuration Name="THUMB Flash Debug" arm_linker_heap_size="512" arm_linker_stack_size="512" arm_linker_treat_warnings_as_errors="Yes" c_preprocessor_definitions="STARTUP_FROM_RESET" c_user_include_directories="$(ProjectDir)/VCOM" linker_printf_fp_enabled="Yes"/>
+    <folder Name="USB_VCOM">
+      <file file_name="VCOM/intenable.c"/>
+      <file file_name="VCOM/serial_fifo.c"/>
+      <file file_name="VCOM/usbcontrol.c"/>
+      <file file_name="VCOM/usbhw_lpc.c"/>
+      <file file_name="VCOM/usbinit.c"/>
+      <file file_name="VCOM/usbSerial.c"/>
+      <file file_name="VCOM/usbstdreq.c"/>
+    </folder>
+  </project>
+  <project Name="TEST EFSL_2">
+    <configuration Name="Common" Target="LPC1768" arm_architecture="v7M" arm_core_type="Cortex-M3" arm_linker_heap_size="128" arm_linker_process_stack_size="0" arm_linker_stack_size="128" arm_simulator_memory_simulation_filename="$(TargetsDir)/LPC1000/LPC1000SimulatorMemory.dll" arm_simulator_memory_simulation_parameter="LPC17;0x80000;0x8000;0x8000" arm_target_debug_interface_type="ADIv5" arm_target_loader_parameter="12000000" c_only_additional_options="-fms-extensions" c_preprocessor_definitions="USE_PROCESS_STACK" c_user_include_directories="$(TargetsDir)/LPC1000/include" link_include_startup_code="No" linker_additional_files="$(TargetsDir)/LPC1000/lib/liblpc1000$(LibExt)$(LIB);$(TargetsDir)/LPC1000/lib/cmsis$(LibExt)$(LIB)" linker_memory_map_file="$(TargetsDir)/LPC1000/LPC1768_MemoryMap.xml" oscillator_frequency="12MHz" project_directory="TEST EFSL" project_type="Executable" property_groups_file_path="$(TargetsDir)/LPC1000/propertyGroups.xml"/>
+    <configuration Name="Flash" Placement="Flash" arm_target_flash_loader_file_path="$(TargetsDir)/LPC1000/Release/Loader_rpc.elf" arm_target_flash_loader_type="LIBMEM RPC Loader" linker_patch_build_command="&quot;$(StudioDir)/bin/crossscript&quot; &quot;load(\&quot;$(TargetsDir)/LPC1000/LPC1000_LinkPatch.js\&quot;);patch(\&quot;$(TargetPath)\&quot;);&quot;" linker_section_placement_file="$(StudioDir)/targets/Cortex_M/flash_placement.xml" target_reset_script="FLASHReset()"/>
+    <configuration Name="RAM" Placement="RAM" linker_section_placement_file="$(StudioDir)/targets/Cortex_M/ram_placement.xml" target_reset_script="SRAMReset()"/>
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc"/>
+      <file file_name="EFSL_MAIN.c"/>
+      <file file_name="TIMER_HP15C.c"/>
+      <file file_name="LED_HP15C.c"/>
+    </folder>
+    <folder Name="System Files">
+      <file file_name="$(StudioDir)/source/thumb_crt0.s"/>
+      <file file_name="$(TargetsDir)/LPC1000/LPC1700_Startup.s"/>
+      <file file_name="$(TargetsDir)/LPC1000/LPC1700_Target.js">
+        <configuration Name="Common" file_type="Reset Script"/>
+      </file>
+      <file file_name="$(TargetsDir)/LPC1000/ctl_lpc1700.c"/>
+    </folder>
+    <folder Name="CMSIS Files">
+      <file file_name="$(TargetsDir)/LPC1000/include/CMSIS/LPC17xx.h"/>
+      <file file_name="$(TargetsDir)/LPC1000/include/CMSIS/system_LPC17xx.h"/>
+      <file file_name="$(TargetsDir)/LPC1000/include/CMSIS/system_LPC17xx.c"/>
+      <file file_name="CMSIS SRC/lpc17xx_gpio.c"/>
+      <file file_name="CMSIS SRC/lpc17xx_pinsel.c"/>
+      <file file_name="CMSIS SRC/lpc17xx_timer.c"/>
+      <file file_name="CMSIS SRC/lpc17xx_clkpwr.c"/>
+    </folder>
+    <folder Name="EFSL Files" file_name="">
+      <file file_name="efsl/src/debug.c"/>
+      <file file_name="efsl/src/dir.c"/>
+      <file file_name="efsl/src/disc.c"/>
+      <file file_name="efsl/src/efs.c"/>
+      <file file_name="efsl/src/extract.c"/>
+      <file file_name="efsl/src/fat.c"/>
+      <file file_name="efsl/src/file.c"/>
+      <file file_name="efsl/src/fs.c"/>
+      <file file_name="efsl/src/ioman.c"/>
+      <file file_name="efsl/src/ls.c"/>
+      <file file_name="efsl/src/mkfs.c"/>
+      <file file_name="efsl/src/partition.c"/>
+      <file file_name="efsl/src/plibc.c"/>
+      <file file_name="efsl/src/time.c"/>
+      <file file_name="efsl/src/ui.c"/>
+    </folder>
+    <configuration Name="THUMB Flash Debug" c_user_include_directories="$(ProjectDir)/EFSL/INC;$(ProjectDir)/EFSL/CONF;$(ProjectDir)/HAB INC;$(ProjectDir)/CMSIS INC" linker_printf_fp_enabled="Yes"/>
+    <folder Name="EFSL INTERFACE">
+      <file file_name="efsl/src/interfaces/if_lpc17xx.c"/>
+      <file file_name="efsl/src/interfaces/lpc17xx_sd.c"/>
+      <file file_name="efsl/src/interfaces/EFSL_lpc17xx_spi.c"/>
+    </folder>
+  </project>
+  <project Name="TEST FATFS">
+    <configuration Name="Common" Target="LPC1768" arm_architecture="v7M" arm_core_type="Cortex-M3" arm_linker_heap_size="128" arm_linker_process_stack_size="0" arm_linker_stack_size="128" arm_simulator_memory_simulation_filename="$(TargetsDir)/LPC1000/LPC1000SimulatorMemory.dll" arm_simulator_memory_simulation_parameter="LPC17;0x80000;0x8000;0x8000" arm_target_debug_interface_type="ADIv5" arm_target_loader_parameter="12000000" c_only_additional_options="-fms-extensions" c_preprocessor_definitions="USE_PROCESS_STACK" c_user_include_directories="$(TargetsDir)/LPC1000/include" link_include_startup_code="No" linker_additional_files="$(TargetsDir)/LPC1000/lib/liblpc1000$(LibExt)$(LIB);$(TargetsDir)/LPC1000/lib/cmsis$(LibExt)$(LIB)" linker_memory_map_file="$(TargetsDir)/LPC1000/LPC1768_MemoryMap.xml" oscillator_frequency="12MHz" project_directory="TEST FATFS" project_type="Executable" property_groups_file_path="$(TargetsDir)/LPC1000/propertyGroups.xml"/>
+    <configuration Name="Flash" Placement="Flash" arm_target_flash_loader_file_path="$(TargetsDir)/LPC1000/Release/Loader_rpc.elf" arm_target_flash_loader_type="LIBMEM RPC Loader" linker_patch_build_command="&quot;$(StudioDir)/bin/crossscript&quot; &quot;load(\&quot;$(TargetsDir)/LPC1000/LPC1000_LinkPatch.js\&quot;);patch(\&quot;$(TargetPath)\&quot;);&quot;" linker_section_placement_file="$(StudioDir)/targets/Cortex_M/flash_placement.xml" target_reset_script="FLASHReset()"/>
+    <configuration Name="RAM" Placement="RAM" linker_section_placement_file="$(StudioDir)/targets/Cortex_M/ram_placement.xml" target_reset_script="SRAMReset()"/>
+    <folder Name="Source Files">
+      <configuration Name="Common" filter="c;cpp;cxx;cc;h;s;asm;inc"/>
+      <file file_name="main.c"/>
+      <file file_name="monitor.c"/>
+    </folder>
+    <folder Name="System Files">
+      <file file_name="$(StudioDir)/source/thumb_crt0.s"/>
+      <file file_name="$(TargetsDir)/LPC1000/LPC1700_Startup.s"/>
+      <file file_name="$(TargetsDir)/LPC1000/LPC1700_Target.js">
+        <configuration Name="Common" file_type="Reset Script"/>
+      </file>
+    </folder>
+    <folder Name="CMSIS Files">
+      <file file_name="$(TargetsDir)/LPC1000/include/CMSIS/LPC17xx.h"/>
+      <file file_name="CMSIS SRC/system_LPC17xx.c"/>
+      <file file_name="CMSIS SRC/lpc17xx_systick.c"/>
+    </folder>
+    <folder Name="FAT_FS Files">
+      <file file_name="FAT_FS/ccsbcs.c"/>
+      <file file_name="FAT_FS/ff.c"/>
+    </folder>
+    <folder Name="FAT_FS LPC17XX">
+      <file file_name="FAT_FS_LPC17XX/lpc17xx_rtc.c"/>
+      <file file_name="FAT_FS_LPC17XX/lpc17xx_spi.c"/>
+      <file file_name="FAT_FS_LPC17XX/sd.c"/>
+    </folder>
+    <configuration Name="THUMB Flash Debug" arm_linker_heap_size="1024" arm_linker_stack_size="1024" c_user_include_directories="$(ProjectDir);$(ProjectDir)/CMSIS INC" linker_printf_fp_enabled="Yes"/>
+  </project>
+</solution>

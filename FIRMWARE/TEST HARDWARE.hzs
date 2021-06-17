@@ -1,0 +1,71 @@
+<!DOCTYPE CrossStudio_for_ARM_Session_File>
+<session>
+ <Bookmarks>
+  <BookmarkItem column="0" line="2232" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\CMSIS\lpc17xx_timer.c" number="1" name="Unnamed 1" />
+ </Bookmarks>
+ <Breakpoints>
+  <BreakpointListItem line="20" action="" hardwareBreakpoint="" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="2" counter="0" isFunctionBreakpoint="false" filename="C:\Users\Hab\AppData\Local\Rowley Associates Limited\CrossWorks for ARM\packages\targets\LPC1000\ctl_lpc1700.c" expression="" />
+  <BreakpointListItem line="202" action="" hardwareBreakpoint="" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="4" counter="0" isFunctionBreakpoint="false" filename="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\main.c" expression="" />
+  <BreakpointListItem line="37" action="" hardwareBreakpoint="" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="4" counter="0" isFunctionBreakpoint="false" filename="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\VCOM\serial_fifo.h" expression="" />
+ </Breakpoints>
+ <ETMWindow>
+  <ETMRegister number="0" value="800" />
+  <ETMRegister number="8" value="6f" />
+  <ETMRegister number="9" value="1000000" />
+ </ETMWindow>
+ <ExecutionCountWindow/>
+ <Memory1>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" addressSpace="" />
+ </Memory1>
+ <Memory2>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" addressSpace="" />
+ </Memory2>
+ <Memory3>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" addressSpace="" />
+ </Memory3>
+ <Memory4>
+  <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" addressSpace="" />
+ </Memory4>
+ <Project>
+  <ProjectSessionItem path="TEST HARDWARE" name="unnamed" />
+ </Project>
+ <Register1>
+  <RegisterWindow openNodes="SysTick;SysTick/SysTick_CTRL;SysTick/SysTick_LOAD;SysTick/SysTick_VAL;SysTick/SysTick_CALIB" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="SysTick;SC" decimalNodes="" octalNodes="" asciiNodes="" />
+ </Register1>
+ <Register2>
+  <RegisterWindow openNodes="TIMER0;TIMER0/T0TCR" binaryNodes="" hiddenNodes="" unsignedNodes="TIMER0/T0PR;TIMER0/T0MR0" visibleGroups="" decimalNodes="" octalNodes="" asciiNodes="" />
+ </Register2>
+ <Register3>
+  <RegisterWindow openNodes="" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="" decimalNodes="" octalNodes="" asciiNodes="" />
+ </Register3>
+ <Register4>
+  <RegisterWindow openNodes="" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="" decimalNodes="" octalNodes="" asciiNodes="" />
+ </Register4>
+ <TargetWindow programAction="" uploadFileType="" programLoadAddress="" programSize="" uploadFileName="" uploadMemoryInterface="" programFileName="" uploadStartAddress="" programFileType="" uploadSize="" programMemoryInterface="" />
+ <TraceWindow>
+  <Trace enabled="Yes" />
+ </TraceWindow>
+ <Watch1>
+  <Watches active="0" update="Never" />
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never" />
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never" />
+ </Watch3>
+ <Watch4>
+  <Watches active="1" update="Never" />
+ </Watch4>
+ <Files>
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\main.c" y="101" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\main.c" left="0" selected="0" name="unnamed" top="317" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\VCOM\usbSerial.h" y="70" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\VCOM\usbSerial.h" left="0" selected="0" name="unnamed" top="51" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\VCOM\type.h" y="31" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\VCOM\type.h" left="0" selected="0" name="unnamed" top="16" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\VCOM\lpcusb_type.h" y="45" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\VCOM\lpcusb_type.h" left="0" selected="0" name="unnamed" top="38" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\VCOM\intenable.c" y="6" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\VCOM\intenable.c" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\VCOM\usbhw_lpc.h" y="140" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\VCOM\usbhw_lpc.h" left="0" selected="0" name="unnamed" top="111" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\CMSIS\lpc17xx_clkpwr.c" y="7" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\CMSIS\lpc17xx_clkpwr.c" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\HC15C_DEFINES.h" y="87" path="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\HC15C_DEFINES.h" left="0" selected="0" name="unnamed" top="27" />
+ </Files>
+ <ARMCrossStudioWindow activeProject="TEST_HARDWARE_1" autoConnectTarget="USB CrossConnect for ARM" debugSearchFileMap="" fileDialogInitialDirectory="C:\Users\Hab\Documents\Hab Projects\MY_CAL\FIRMWARE\VCOM" fileDialogDefaultFilter="*.c" autoConnectCapabilities="388991" debugSearchPath="" buildConfiguration="THUMB Flash Debug" />
+</session>
