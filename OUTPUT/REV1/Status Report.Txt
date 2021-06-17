@@ -1,0 +1,28 @@
+Output: Gerber Files
+Type  : Gerber
+From  : PCB Document [PCB-HC15C_REV1.PcbDoc]
+   Generated File[PCB-HC15C_REV1.GTL]
+   Generated File[PCB-HC15C_REV1.GP1]
+   Generated File[PCB-HC15C_REV1.GP2]
+   Generated File[PCB-HC15C_REV1.GBL]
+   Generated File[PCB-HC15C_REV1.GTO]
+   Generated File[PCB-HC15C_REV1.GTS]
+   Generated File[PCB-HC15C_REV1.GBS]
+   Generated File[PCB-HC15C_REV1.GBO]
+   Generated File[PCB-HC15C_REV1.RUL]
+   Generated File[PCB-HC15C_REV1.EXTREP]
+   Generated File[PCB-HC15C_REV1.REP]
+
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [PCB-HC15C_REV1.PcbDoc]
+   Generated File[PCB-HC15C_REV1.TXT]
+   Generated File[PCB-HC15C_REV1.DRL]
+   Generated File[PCB-HC15C_REV1.LDP]
+   Generated File[PCB-HC15C_REV1.DRR]
+
+
+Files Generated   : 15
+Documents Printed : 0
+
+Finished Output Generation At 8:35:38 PM On 6/6/2011

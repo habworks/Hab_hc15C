@@ -1,0 +1,12 @@
+DRC Rules Export File for PCB: C:\Users\Hab\Documents\Hab Projects\MY_CAL\PCB\PCB-HC15C_REV2.PcbDoc
+RuleKind=Clearance|RuleName=Clearance_U8|Scope=Board|Minimum=7.00
+RuleKind=Clearance|RuleName=Clearance_U7|Scope=Board|Minimum=7.00
+RuleKind=Clearance|RuleName=Clearance_U2|Scope=Board|Minimum=7.00
+RuleKind=Clearance|RuleName=Clearance_USB_J3|Scope=Board|Minimum=7.00
+RuleKind=Clearance|RuleName=Clearance_USB_J2|Scope=Board|Minimum=7.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=8.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=7.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Clearance|RuleName=Clearance_U4|Scope=Board|Minimum=7.80
+RuleKind=Clearance|RuleName=UNDERMOUNT_LED|Scope=Board|Minimum=5.00
