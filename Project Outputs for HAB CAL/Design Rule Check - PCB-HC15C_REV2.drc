@@ -1,0 +1,95 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Hab\Documents\Hab Projects\MY_CAL\PCB\PCB-HC15C_REV2.PcbDoc
+Date     : 3/7/2012
+Time     : 8:41:43 PM
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) ((InComponent('U5'))),((InComponent('U5')))
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) ((InComponent('U9'))),((InComponent('U9')))
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) ((InComponent('J4'))),((InComponent('J4')))
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) ((InComponent('U8'))),((InComponent('U8')))
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) ((InComponent('U7'))),((InComponent('U7')))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InComponent('U8'))),((InComponent('U8')))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InComponent('U7'))),((InComponent('U7')))
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) ((InComponent('U2'))),((InComponent('U2')))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InComponent('U2'))),((InComponent('U2')))
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) ((InComponent('J3'))),((InComponent('J3')))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InComponent('J3'))),((InComponent('J3')))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7mil) ((InComponent('J2'))),((InComponent('J2')))
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) ((InComponent('J2'))),((InComponent('J2')))
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=8mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=7mil) (Max=20mil) (Preferred=8mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=125mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=4mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silkscreen Over Component Pads (Clearance=10mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=10mil) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=7.8mil) ((InComponent('U4'))),((InComponent('U4')))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=5mil) ((HasFootprint('OSRAM_XX_M47K'))),((HasFootprint('OSRAM_XX_M47K')))
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) ((HasFootprint('OSRAM_XX_M67K'))),((IsVia))
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) ((InComponent('U10'))),((InComponent('U10')))
+Rule Violations :0
+
+
+Violations Detected : 0
+Time Elapsed        : 00:00:04

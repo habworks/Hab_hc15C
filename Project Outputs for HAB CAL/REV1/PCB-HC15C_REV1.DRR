@@ -1,0 +1,19 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: PCB-HC15C_REV1.PcbDoc   6/15/2011  7:36:58 AM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : PCB-HC15C_REV1.TXT
+EIA File   : PCB-HC15C_REV1.DRL
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        15mil (0.381mm)          Round          241              72.21 Inch (1834.17 mm)
+T2        30mil (0.762mm)          Round          27               6.94 Inch (176.28 mm)
+T3        35mil (0.889mm)          Round          20               2.20 Inch (55.88 mm)
+T4        67mil (1.7018mm)         Round          2                0.20 Inch (5.00 mm)
+T5        106mil (2.6924mm)        Round          5         NPTH   0.70 Inch (17.78 mm)
+---------------------------------------------------------------------------
+Totals                                            295              82.25 Inch (2089.12 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:01
