@@ -77,6 +77,11 @@ Firmware/TestProject1/Debug/*
 GRAPHICS/*
 History/*
 FIRST PROTOTYPE FIRMWARE/*
+ViewsOfHAB CAL_PrjPCB/*
+Project Logs for HAB CAL/*
+SOFTWARE/HC15C/HC15C/HC15C/Debug/*
+SOFTWARE/WIN APP NGLF RX PROTOCOL/*
+*.mp4
 *.SchDocPreview
 SCH/__Previews/*.*
 PCB/*.html
